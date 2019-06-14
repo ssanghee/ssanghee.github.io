@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.slideto.min.js"></script>
+<script type="text/javascript">
+
+jQuery(function($){
+
+ $("#body_top").click(function(){
+
+  $("#header").slideto({highlight: false});
+
+ });
+
+});
+
+</script>
+
+
+
+</head>
+<body>
+
+		<div id="logo"  position:relative;>
+            <img src="bg.jpg" width=100% height="500px">
+            <p>I am a student of computer information engineering at Dong Yang Mirae University. I made it because I was asked to make a homepage to introduce myself as an html task</p>
+            <p>Although I am not good enough, I made a homepage.<strong>Please look at me warmly.</strong> </p>
+            
+		<div id="menu">
+			<ul style="position: fixed; top: 0; left: 100 right: 100">
+				<li class="current_page_item"><a href="#">Home</a></li>
+				<li><a href =#second-section>Photos</a></li>
+				<li><a href="#">Interest</a></li>
+				<li><a href="#">Contact</a></li>
+				
+			</ul>
+            
+		
+    </div>
+
+            
+
+</div>
+<div id="second-section" >
+        <h1>I'm a playful student.</h1>
+        <br>
+        <table border=0 align="center">
+            <tr align="center">
+        <td><img src="1st.jpg" width="300px" height="300px"></td>
+        <td><img src="2st.jpg" width="300px" height="300px"></td>
+            </tr><tr>
+        <td><img src="3st.jpg" width="300px" height="300px"></td>
+        <td><img src="4st.jpg" width="300px" height="300px"></td>
+                </tr>
+        </table>
+        <h2>I meet my friends when I am bored or tired. They always make me happy</h2>
+    </div>
+<div id="third-section" >
+    <img src="int.png" class="imgi">
+    <table border="0">
+    <td> <div id="icon">    
+        <div id="iconimage">
+        <img src="icon/688062.png" >
+            </div>
+             
+            </div>
+   
+    <div id="icon">
+         <div id="iconimage">
+         <img src="icon/280950.png" >
+       
+         </div>
+    </div>
+     
+    <div id="icon">
+        <div id="iconimage">
+            <img src="icon/1792307.png">
+        </div>
+    </div>
+        </td><td>
+    <div id="iconinfo">
+           
+        <h2>Photoshop | It's the best tool for me, who likes to design.</h2>
+        <h2>Character | Since I was young, my dream has been to produce an animation like Minions.</h2>
+        <h2>Game | interesting. </h2>
+        
+        
+        </div></td>
+             </table> 
+   
+    </div>
+    <div id="footer">
+    <form method="post" action="#">
+						<div class="field half first">
+							<label for="name" value="name"></label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email" value="email"></label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message" value="message"></label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="submit" /></li>
+						</ul>
+					</form>
+</div>
+    
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+</body>
+</html>

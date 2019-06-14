@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1,min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="fuckingjava.js"></script>
+    
+    <!--미리보기 레이어-->
+    <link rel='stylesheet' href="sangheecs.css">
+    <link href="sangheecs.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Jua|Staatliches&display=swap" rel="stylesheet"/>
+   <style>
+       
+      
+
+body, html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "fira-sans-2", Verdana, sans-serif;
+}
+
+#i0{
+           padding: 40px 0px 40px 200px;
+       }
+#i1 {
+float: left;
+border-radius: 60px;
+width: 300px;
+height: 300px;
+       }
+#i2{
+border-radius: 60px;
+width: 300px;
+height: 300px;
+       }
+#graphdiv{
+    padding-left: 200px;       
+       }
+#q-graph {
+  display: block; 
+  position: relative; 
+  width: 600px; 
+  height: 300px;
+  margin: 1.1em 0 0; 
+  padding-left: 0px;
+  background: transparent; <!--투명-->
+  font-size: 11px;
+}
+ 
+
+#q-graph tr, #q-graph th, #q-graph td { 
+  position: absolute;
+  bottom: 0; 
+  width: 150px; 
+  z-index: 2;
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+#q-graph td {
+  transition: all .3s ease;
+  
+  &:hover {
+    background-color: desaturate(#85144b, 100);
+    opacity: .9;
+    color: white;
+  }
+}
+  
+#q-graph thead tr {
+  left: 100%; 
+  top: 50%; 
+  bottom: auto;
+  margin: -2.5em 0 0 5em;}
+#q-graph thead th {
+  width: 7.5em; 
+  height: auto; 
+  padding: 0.5em 1em;
+}
+#q-graph thead th.sent {
+  top: 0; 
+  left: 0; 
+  line-height: 2;
+}
+#q-graph thead th.paid {
+  top: 2.75em; 
+  line-height: 2;
+  left: 0; 
+}
+
+#q-graph tbody tr {
+  height: 296px;
+  padding-top: 2px;
+  border-right: 1px dotted #C4C4C4; 
+  color: #AAA;
+}
+#q-graph #brain {
+  left: 0;
+}
+#q-graph #hei {left: 150px;}
+#q-graph #ppl {left: 300px;}
+#q-graph #q4 {left: 450px; border-right: none;}
+#q-graph tbody th {bottom: -1.75em; vertical-align: top;
+font-weight: normal; color: #333;}
+#q-graph .bar {
+  width: 60px; 
+  border: 1px solid; 
+  border-bottom: none; 
+  color: #000;
+}
+#q-graph .bar p {
+  margin: 5px 0 0; 
+  padding: 0;
+  opacity: .4;
+}
+#q-graph .sent {
+  left: 13px; 
+  background-color: #779eef;
+  border-color: transparent;
+}
+#q-graph .paid {
+  left: 77px; 
+  background-color:#efd477;
+  border-color: transparent;
+}
+    </style>
+
+    
+    </head>
+    <body>
+        
+           <div id="container3">
+                <div id="first-section" style=" text-align:center; width:70%;" >
+               <div id="menu" position:relative; style="background-image: url(%ED%9D%B0%EB%91%A5%EC%9D%B4.jpg); text-align:center;">
+			<ul style="position: fixed; top: 0;">
+				<li ><a href="sanghee.html">등장인물 소개</a></li>
+				<li ><a href ="zzangtoday.html">짱구의 하루</a></li>
+				<li class="current_page_item"><a href="#">흰둥이에 관한 고찰</a></li>
+				<li><a href="series.html">극장판 BEST3</a></li>
+				
+			</ul>
+            
+                    </div>
+                    <table id="i0">
+                        <colgroup>
+                        <col style="width: 0%">
+                            <col style="width: 20%">
+                            <col style="width: 0%">
+                        </colgroup>
+                    <tr><td><img src="table/Q.jpg" id="i1">
+                        </td>
+                        <td ><h1>VS</h1>
+                        </td>
+                        <td><img src="white2.jpg" id="i2">
+                        </td></tr>
+                    </table>
+                   <div id="graphdiv">
+                    <table id="q-graph">
+<thead>
+<tr>
+<th></th>
+<th class="sent">흰둥이</th>
+<th class="paid">짱구</th>
+</tr>
+</thead>
+<tbody>
+<tr class="qtr" id="brain">
+<th scope="row">지능</th>
+<td class="sent bar" style="height: 111px;"><p>사람의 뇌</p></td>
+<td class="paid bar" style="height: 99px;"><p>모자란 척</p></td>
+</tr>
+<tr class="qtr" id="hei">
+<th scope="row">신장기능</th>
+<td class="sent bar" style="height: 206px;"><p>근육 빵빵</p></td>
+<td class="paid bar" style="height: 194px;"><p>유딩 몸매</p></td>
+</tr>
+<tr class="qtr" id="ppl">
+<th scope="row">인간성</th>
+<td class="sent bar" style="height: 259px;"><p>사람보다 남</p></td>
+<td class="paid bar" style="height: 193px;"><p>인간이 아님</p></td>
+</tr>
+<tr class="qtr" id="q4">
+<th scope="row">수명</th>
+<td class="sent bar" style="height: 110px;"><p>유일한 단점</p></td>
+<td class="paid bar" style="height: 195px;"><p>장수짱구</p></td>
+</tr>
+</tbody>
+</table>
+       </div>                
+               </div>
+        </div>
+    </body>
+</html>

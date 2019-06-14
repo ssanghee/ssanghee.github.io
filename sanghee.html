@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/> <!--문자 인코딩 방식-->
+    <script type="text/javascript"  src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1,min.js"></script><!--제이쿼리 주소 가져오기-->
+    
+    <!--미리보기 레이어-->
+    <link rel='stylesheet' href="sangheecs.css">
+    <link href="sangheecs.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Jua|Staatliches&display=swap" rel="stylesheet"/>
+    <title>Untitled Document</title>
+    <script type='text/javascript'>
+//<![CDATA[
+
+function openlayer(nm)
+{
+    var obj = document.getElementById(nm);
+    obj.style.display = 'block';
+} <!--var을 붙인 객체변수는 지역객체 이다 !!
+    엘리먼트를 아이디로 받아온다 true일떄만 실행 됨--> 
+function closelayer(nm)
+{
+    var obj = document.getElementById(nm);
+    obj.style.display = 'none';
+}
+
+//]]>
+    </script>
+   <style>
+       img:hover{
+           border: 5px solid black;
+       }
+       
+    </style>
+
+    
+    </head>
+    <body>
+        
+           <div id="container">
+                <div id="first-section" style=" text-align:center; width:70%;" >
+               <div id="menu" position:relative; style="background-image: url(C.jpg); text-align:center;">
+			<ul style="position: fixed; top: 0;">
+				<li class="current_page_item"><a href="#">등장인물 소개</a></li>
+				<li><a href ="zzangtoday.html">짱구의 하루</a></li>
+				<li><a href="white.html">흰둥이에 관한 고찰</a></li>
+				<li><a href="series.html">극장판 BEST3</a></li>
+				
+			</ul>
+            
+		
+    </div>
+                    <div id="layer1"  style="width:800px; height:300px; position:fixed; margin: 150px 100px
+                                            50px 200px; z-index:999; display:none; background:#FFFFFF;">
+  <table border="1" width="100%" height="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+          <img src="table/mang.jpg" width:800px; height:300px;></td>
+    </tr>
+  </table>
+</div>
+                    <div id="layer2" style="width:800px; height:300px; position:fixed; margin: 150px 100px
+                                            50px 200px; z-index:999; display:none; background:#FFFFFF;">
+  <table border="1" width="100%" height="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+          <img src="table/chul.jpg" width:800px; height:300px;> </td>
+    </tr>
+  </table>
+</div>
+                                 <div id="layer3" style="width:800px; height:300px; position:fixed; margin: 150px 100px
+                                            50px 200px; z-index:999; display:none; background:#FFFFFF;">
+  <table border="1" width="100%" height="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+          <img src="table/zzang.jpg" width:800px; height:300px;> </td>
+    </tr>
+  </table>
+</div>
+                     <div id="layer4" style="width:800px; height:300px; position:fixed; margin: 150px 100px
+                                            50px 200px; z-index:999; display:none; background:#FFFFFF;">
+  <table border="1" width="100%" height="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+          <img src="table/yuri.jpg" width:800px; height:300px;> </td>
+    </tr>
+  </table>
+</div>
+                    <div id="layer5" style="width:800px; height:300px; position:fixed; margin: 150px 100px
+                                            50px 200px; z-index:999; display:none; background:#FFFFFF;">
+  <table border="1" width="100%" height="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+          <img src="table/zzanga.jpg" width:800px; height:300px;> </td>
+    </tr>
+  </table>
+</div>
+                     <div id="layer6" style="width:800px; height:300px; position:fixed; margin: 150px 100px
+                                            50px 200px; z-index:999; display:none; background:#FFFFFF;">
+  <table border="1" width="100%" height="100%" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+          <img src="table/hun.jpg" width:800px; height:300px;> </td>
+    </tr>
+  </table>
+</div>
+    <div id="box">
+                    <table id="hovertable">
+                    <tr>
+                    <td><img src="table/%EB%A7%B9%EA%B5%AC.png"  width="100px"
+                             onmouseover="openlayer('layer1'); return false;"
+                             onmouseout="closelayer('layer1'); return false;">
+                        <br>
+                        
+                        </td>
+                    <td><img src="table/externalFile%20(1).png" width="100px" 
+                              onmouseover="openlayer('layer2'); return false;"
+                              onmouseout="closelayer('layer2'); return false;"
+                             ></td>
+                    <td><img src="table/%EC%8B%A0%EC%A7%B1.png" width="100px"
+                             onmouseover="openlayer('layer3'); return false;"
+                              onmouseout="closelayer('layer3'); return false;"
+                             ></td>
+                    <td><img src="table/%EC%9C%A0%EB%A6%AC.png" width="100px"
+                             onmouseover="openlayer('layer4'); return false;"
+                              onmouseout="closelayer('layer4'); return false;"
+                             ></td>
+                    <td><img src="table/%EC%A7%B1%EC%95%84.png"  width="100px" 
+                              onmouseover="openlayer('layer5'); return false;"
+                              onmouseout="closelayer('layer5'); return false;"
+                             ></td>
+                        
+                    <td><img src="table/%ED%9B%88%EC%9D%B4.png"  width="100px"
+                             onmouseover="openlayer('layer6'); return false;"
+                              onmouseout="closelayer('layer6'); return false;"
+                             ></td>
+                    </tr>
+               
+                    </table>
+                   <audio src="UAvrH.mp3"
+       controls
+       autoplay
+       loop 
+        id="audio">
+</audio>
+                    </div>
+
+
+<!-- 레이어 a부분 //-->
+
+
+
+
+               </div>
+           </div>
+
+    
+    </body>
+</html>

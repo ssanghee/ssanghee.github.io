@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1,min.js"></script>
+    <script type='text/javascript'>
+        
+        function openlayer(nm)
+{
+    var obj = document.getElementById(nm);
+    obj.style.display = 'block';
+}
+function closelayer(nm)
+{
+    var obj = document.getElementById(nm);
+    obj.style.display = 'none';
+}
+
+</script>
+ 
+    <!--미리보기 레이어-->
+    <link rel='stylesheet' href="sangheecs.css">
+    <link href="sangheecs.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Jua|Staatliches&display=swap" rel="stylesheet"/>
+  <style>
+      h3{
+           font-family: 'Jua', sans-serif;
+       }</style> 
+    
+    </head>
+    <body>
+        
+           <div id="container2">
+                <div id="first-section" style=" text-align:center; width:70%;" >
+                    
+               <div id="menu" position:relative; style="background-image: url(zzang.jpg); text-align:center;">
+			<ul style="position: fixed; top: 0;">
+				<li ><a href="sanghee.html">등장인물 소개</a></li>
+				<li class="current_page_item"><a href =#second-section>짱구의 하루</a></li>
+				<li><a href="white.html">흰둥이에 관한 고찰</a></li>
+				<li><a href="series.html">극장판 BEST3</a></li>
+				
+			</ul>
+            
+                    </div>
+      <div class="round" onmouseover="openlayer('layerW'); closelayer('layerQ');return false;"
+                         onmouseout="closelayer('layerW'); openlayer('layerQ');return false;">
+  <div class="sun">
+  </div>
+   <div class="stars" id="one"></div>
+  <div class="stars" id="two"></div>
+  <div class="stars" id="three"></div>
+  <div class="stars" id="four"></div>
+  <div class="stars" id="five"></div>
+  <div class="base">
+  </div>
+  <div class="house">
+    <div class="door"></div>
+    <div class="wwindow"></div>
+  </div>
+  <div class="tree">
+    
+      <div class="leaf" id="first"></div>
+      <div class="leaf" id="second"></div>
+      <div class="leaf" id="th"></div>
+      
+    <div class="bark"></div>
+  </div>
+ 
+</div>
+                    
+                        <table id="layerW"  border="1" style="width:600; height:200px; position:fixed; margin-left: 170px; z-index:999; display:none;
+                                                               border: 1px solid #ccc; background: #f8f8f8;  border-collapse: collapse;">
+                            <tr><td><img src="table/story1.jpg" width="200px" height="200px"></td><td><img src="table/story2.jpg" width="200px" height="200px"></td>
+                                <td><img src="table/story3.jpg" width="200px" height="200px"></td></tr>
+                            <tr><td><h3>고양이들과 교감하는 짱구</h3></td><td><h3>액션가면을 보기위해 리모컨을 사수하는 짱구</h3></td><td><h3>똥을 싸겠다고 다짐하는 짱구</h3></td></tr>
+                    </table>
+                          <table id="layerQ"  border="1" style="width:600; height:200px; position:fixed; margin-left: 300px; z-index:999; display:block;
+                                                               border: 1px solid #ccc; background: #f8f8f8;  border-collapse: collapse;">
+                            <tr><td><img src="table/story7.jpg"  width="200px" height="200px"></td><td><img src="table/story8.jpg"  width="200px" height="200px"></td>
+                                <td><img src="table/story6.jpg"  width="200px" height="200px"></td>
+                              </tr>
+                              <tr><td><h3>씻긴 하는 짱구</h3></td><td><h3>빨노 조합으로 돌려막기</h3></td><td><h3>외출 준비 완료 짱구</h3></td></tr>
+                    </table>
+                    
+                        
+                    
+                           
+                           
+               </div>
+        </div>
+    </body>
+</html>
